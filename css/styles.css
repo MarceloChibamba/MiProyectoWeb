@@ -1,22 +1,33 @@
-body
+/*reset basico*/
+*
 {
-    font-family: Aral, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+/*estilos generales*/
+body
+{
+    font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #f4f4f4;
     transition: background-color 0.5s;
 }
-
+/*encabezado*/
 header
 {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
 }
-
+/*contenido principal*/
 main
 {
     margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button
@@ -24,6 +35,8 @@ button
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
+    border: none;
+    border-radius: 2px;
 }
 /*estilo de la barra de navegacion*/
 nav
@@ -72,7 +85,7 @@ nav
 {
     nav 
     {
-        flex-direction: colum;
+        flex-direction: column;
         align-items: flex-start;
     }
     .menu
