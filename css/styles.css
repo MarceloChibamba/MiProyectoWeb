@@ -25,3 +25,63 @@ button
     font-size: 1rem;
     cursor: pointer;
 }
+/*estilo de la barra de navegacion*/
+nav
+{
+    background-color: #333;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+/*estilo del logo*/
+.logo a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+/*estilos del menu de navegacion*/
+.menu
+{
+    list-style: none;
+    display: flex;
+}
+
+.menu li
+{
+    margin-left: 20px;
+}
+
+.menu li a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover
+{
+    background-color: #575757;
+    border-radius: 4px;   
+}
+/*estilos responsivos para dispositivos moviles*/
+@media(max-width: 768px)
+{
+    nav 
+    {
+        flex-direction: colum;
+        align-items: flex-start;
+    }
+    .menu
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu li
+    {
+        margin: 10px 0;
+    }
+}
